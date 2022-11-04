@@ -109,7 +109,26 @@ function euclidGCD(a, b) {
 
 
 //7. The user enters 1 number. Find a number that is a mirror image of the sequence of digits of a given number, for example, given the number 123, output is 321 in this case.
+function seven(){
+    let a=+prompt('Please enter a value A:')
+    console.log('A='+a)
 
+    let mirror=0;
+    let r;
+    while(a!=0){
+        r=a%10;
+        mirror=mirror*10+r;
+        a=(a-r)/10;
+    }
+    console.log('Mirror:'+mirror)
+}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //8. The user enters 2 numbers. Find out if these two numbers have the same digits. For example, for a pair of 123 and 3456789, the answer would be "YES", and for a pair of 500 and 99, "NO".
+const a = +prompt('Enter A');
+const b = +prompt('Enter B')
+
+console.log('A='+a)
+console.log('B='+b)
+
+let rA,rB
